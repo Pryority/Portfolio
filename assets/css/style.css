@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .hero {
-  padding: 128px 80px 128px 56px;
+  padding: 64px 56px 64px 56px;
   display: flex;
   justify-content: flex-end;
   background: var(--main-gradient);
@@ -82,22 +82,41 @@ nav a:hover {
 }
 
 .avatar {
-  height: 25vw;
+  height: 33vw;
 }
 
 .projects {
   display: flex;
-  background-color: var(--main-bg-color);
-  justify-content: space-around;
+  padding: 64px 32px 64px 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects h2 {
+  justify-content: flex-end;
+  padding: 8px;
+  font-size: 64px;
+  font-family: var(--main-font), sans-serif;
+}
+
+.projects-container {
+  padding: 0 128px 0 128px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .project {
-  width: 40%;
-  padding: 16px;
-  background-color: aqua;
+  width: 34%;
+  padding: 32px;
+  background-color: var(--off-white);
+  border: 2.34px var(--divider) solid;
+  border-radius: 16px;
 }
 
-.project-title {
+.project h3 {
+  display: flex;
+  justify-content: flex-end;
   font-size: 40px;
   font-family: var(--main-font), sans-serif;
 }
@@ -105,9 +124,14 @@ nav a:hover {
 .project-type {
   font-family: var(--main-font), sans-serif;
   margin-top: 8px;
-  width: 20%;
   display: flex;
   color: var(--main-text-color);
+}
+
+.project-info {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 
 .dev-status {
@@ -120,12 +144,63 @@ nav a:hover {
   padding: 8px;
 }
 
-.project-info {
-  align-items: flex-end;
+/* ABOUT ME */
+.about-me {
   display: flex;
+  padding: 64px 32px 64px 32px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.about-me h2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 40vw;
+  padding: 8px;
+  font-size: 64px;
+  font-family: var(--main-font), sans-serif;
+}
+
+.about-me p {
+  font-size: 40px;
+  padding: 8px;
+  font-family: var(--main-font), sans-serif;
+  flex-wrap: wrap;
+}
+
+.vl {
+  padding: 8px;
+  height: 128px;
+  border-left: 5px solid var(--divider);
 }
 
 .avatar {
   border: 8px var(--off-white) solid;
+}
+
+/* CONTACT INFO */
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.contact {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+}
+
+.contact h5 {
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 400px;
+  font-family: var(--main-font), sans-serif;
+}
+.contact p {
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: var(--main-font), sans-serif;
 }
