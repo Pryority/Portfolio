@@ -7,8 +7,21 @@
 :root {
   --main-bg-color: white;
   --main-text-color: black;
-  --main-green: #86ab60;
+  /* --blue-1: ; */
+  --divider: #b9b9b9;
   --main-font: "Helvetica Neue";
+  --main-gradient: linear-gradient(
+    90deg,
+    rgba(31, 90, 112, 1) 0%,
+    rgba(70, 125, 171, 1) 35%,
+    rgba(81, 179, 242, 1) 100%
+  );
+  --bottom-shadow: linear-gradient(
+    90deg,
+    rgba(83, 83, 83, 0) 0%,
+    rgba(3, 23, 36, 1) 100%
+  );
+  /* --top-shadow: ; */
 }
 
 body {
@@ -22,8 +35,8 @@ header {
   background-color: var(--main-bg-color);
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1.62px var(--main-green) solid;
 }
+
 header h1 {
   font-size: 3vw;
 }
@@ -31,27 +44,34 @@ header h1 {
 header h1 a {
   text-decoration: none;
   color: var(--main-text-color);
+  letter-spacing: -3px;
   font-family: var(--main-font), sans-serif;
 }
 
 nav {
-  width: 30%;
+  width: 42%;
   display: flex;
   justify-content: space-around;
 }
 
 nav a {
   font-size: 1.62vw;
+  font-weight: 200;
+  letter-spacing: 3px;
   text-decoration: none;
   color: var(--main-text-color);
   font-family: var(--main-font), sans-serif;
+}
+
+nav a:hover {
+  text-shadow: 0px 0.62px;
 }
 
 .hero {
   padding: 128px 80px 128px 56px;
   display: flex;
   justify-content: flex-end;
-  background-color: rgb(244, 244, 244);
+  background: var(--main-gradient);
 }
 
 .hero h2 {
@@ -65,15 +85,19 @@ nav a {
 }
 
 .projects {
-  border-top: 1.62px var(--main-green) solid;
+  display: flex;
   background-color: var(--main-bg-color);
+  justify-content: space-around;
 }
 
 .project {
+  width: 40%;
   padding: 16px;
+  background-color: aqua;
 }
 
 .project-title {
+  font-size: 40px;
   font-family: var(--main-font), sans-serif;
 }
 
@@ -83,4 +107,20 @@ nav a {
   width: 20%;
   display: flex;
   color: var(--main-text-color);
+}
+
+.dev-status {
+  display: flex;
+  font-family: var(--main-font), sans-serif;
+  justify-content: space-between;
+}
+
+.dev-status h4 {
+  padding: 8px;
+}
+
+.project-info {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
