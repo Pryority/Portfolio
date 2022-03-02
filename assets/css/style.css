@@ -8,6 +8,7 @@
   --main-bg-color: white;
   --main-text-color: black;
   --main-green: #86ab60;
+  --main-font: "Helvetica Neue";
 }
 
 body {
@@ -30,6 +31,7 @@ header h1 {
 header h1 a {
   text-decoration: none;
   color: var(--main-text-color);
+  font-family: var(--main-font), sans-serif;
 }
 
 nav {
@@ -42,6 +44,7 @@ nav a {
   font-size: 1.62vw;
   text-decoration: none;
   color: var(--main-text-color);
+  font-family: var(--main-font), sans-serif;
 }
 
 .hero {
@@ -70,12 +73,14 @@ nav a {
   padding: 16px;
 }
 
+.project-title {
+  font-family: var(--main-font), sans-serif;
+}
+
 .project-type {
+  font-family: var(--main-font), sans-serif;
   margin-top: 8px;
   width: 20%;
   display: flex;
   color: var(--main-text-color);
-}
-
-.divider {
 }
