@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: white;
+  --main-text-color: black;
+  --main-green: #86ab60;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 24px 40px 24px 40px;
+  display: flex;
+  background-color: var(--main-bg-color);
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.62px var(--main-green) solid;
+}
+header h1 {
+  font-size: 3vw;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  font-size: 1.62vw;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.hero {
+  padding: 128px 80px 128px 56px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(244, 244, 244);
+}
+
+.hero h2 {
+  width: 35%;
+  display: flex;
+  font-size: 2vw;
+}
+
+.avatar {
+  height: 25vw;
+}
+
+.projects {
+  border-top: 1.62px var(--main-green) solid;
+  background-color: var(--main-bg-color);
+}
+
+.project {
+  padding: 16px;
+}
+
+.project-type {
+  margin-top: 8px;
+  width: 20%;
+  display: flex;
+  color: var(--main-text-color);
+}
+
+.divider {
+}
