@@ -85,44 +85,46 @@ nav a:hover {
   height: 33vw;
 }
 
-.projects {
+.project {
+  padding: 32px;
+  border: 2.34px var(--divider) solid;
+  border-radius: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.projects h2 {
-  justify-content: flex-end;
-  padding: 8px;
-  font-size: 64px;
-  font-family: var(--main-font), sans-serif;
+.p-container {
+  width: 100%;
+  padding: 16px;
 }
 
 .projects-container {
   display: flex;
+}
+
+.projects {
+  width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hstack {
+  display: flex;
   width: 100%;
 }
 
-.project {
-  width: 34%;
-  padding: 32px;
-  border: 2.34px var(--divider) solid;
-  border-radius: 16px;
-  display: f;
+.hstack article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.demo {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  margin-top: 32px;
-}
-.project div {
-  display: flex;
-  flex-direction: column;
+.projects-container h2 {
+  justify-content: flex-end;
+  padding: 8px;
+  font-size: 64px;
+  font-family: var(--main-font), sans-serif;
 }
 
 .project h3 {
@@ -138,12 +140,6 @@ nav a:hover {
   display: flex;
   justify-content: flex-start;
   color: var(--main-text-color);
-}
-
-.dev-status {
-  display: flex;
-  font-family: var(--main-font), sans-serif;
-  justify-content: flex-start;
 }
 
 /* ABOUT ME */
@@ -207,17 +203,34 @@ nav a:hover {
   font-family: var(--main-font), sans-serif;
 }
 
-.project.survival {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-image-container {
+.img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-image-container p {
+.img-container p {
   font-size: 5vw;
+}
+
+.demo {
+  display: flex;
+  background-image: url("../images/mp.PNG");
+  /* background-size: cover; */
+  /* border-radius: 8px; */
+  background-color: red;
+}
+
+.vstack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  font-family: var(--main-font), sans-serif;
+}
+
+.status p {
+  display: flex;
 }

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
+        <!--HEADER-->
        <header>
             <h1><a href="./">Matthew's Portfolio</a></h1>
             <nav>
@@ -21,6 +22,7 @@
             </nav>
        </header>
 
+       <!--HERO-->
        <section class="hero">
            <img src="./assets/images/mp.PNG" alt="Matthew standing at the summit of Mt. Fuji." class="avatar">
        </section>
@@ -31,34 +33,65 @@
            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus excepturi dolores animi, nam, sed veritatis earum laudantium rem molestias quia pariatur eveniet quas rerum eligendi saepe magnam est minima.</p>
        </section>
 
-       <section id="projects" class="projects">
+       <!--PROJECTS-->
+       <div class="projects-container">
         <h2>Projects</h2>
-        <div class="vl"></div>
-           <div class="projects-container">
-                <article class="project athleague">
-                    <article>
-                        <h3 class="project-title">Athleague</h3>
-                        <div class="dev-status">
-                        <h4 class="status">Status:</h4>
-                        <h4 class="status">In Development</h4>
-                    </article>
-                    <img src="./assets/images/trail.png" class="demo" alt=""/>
-                    <p class="project-type">HTML / CSS / Javascript / MapBox</p>
-                </article>
-                <article class="project survival">
-                    <article class="project-header">
-                        <h3 class="project-title">Survival</h3>
-                        <div class="dev-status">
-                        <h4 class="status">Status:</h4>
-                        <h4 class="status">Future Build</h4>
-                    </article>
-                    <div class="project-image-container">                    
-                        <p>⚠️</p>
-                    </div>
-                    <p class="project-type">HTML / CSS / Javascript / MapBox</p>
-                </article>
-       </section>
 
+        <div class="vl"></div>
+       <section id="projects" class="projects">
+            
+
+            
+            <div class="vstack">
+                <div class="p-container">
+                    <article class="project">
+                        <div>
+                            <h3>Athleague</h3>
+                            <div class="status">
+                                <h4>Status:</h4>
+                                <p>In Development</p>
+                            </div>
+                        </div>
+                        <div class="img-container"><p>⚠️</p></div>                    
+                        <p class="project-type">HTML / CSS / Javascript / MapBox</p>
+                    </article>
+                </div>
+
+                <div class="hstack">
+                    <!--SURVIVAL-->
+                    
+                    <div class="p-container">
+                        <article class="project">
+                            <div>
+                                <h3>Survival</h3>
+                                <div class="status">
+                                    <h4>Status:</h4>
+                                    <p>Future Build</p>
+                                </div>
+                            </div>
+                            <div class="img-container"><p>⚠️</p></div>                    
+                            <p class="project-type">HTML / CSS / Javascript / MapBox</p>
+                        </article>
+                    </div>
+
+                    <div class="p-container">
+                        <article class="project">
+                            <div>
+                                <h3>Secret Sentence</h3>
+                                <div class="status">
+                                    <h4>Status:</h4>
+                                    <p>Future Build</p>
+                                </div>
+                            </div>
+                            <div class="img-container"><p>⚠️</p></div>                    
+                            <p class="project-type">HTML / CSS / Javascript / MapBox</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+    </div>
         <section id="contact-info" class="contact-info">
             <div class="contacts">
                 <article class="contact">
@@ -71,7 +104,7 @@
                 </article>
             </div>
         </section>
-            
         <!-- <script src="" async defer></script> -->
     </body>
 </html>
+
