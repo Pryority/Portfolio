@@ -130,7 +130,7 @@ nav a:hover {
 .project h3 {
   display: flex;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 56px;
   font-family: var(--main-font), sans-serif;
 }
 
@@ -229,8 +229,20 @@ nav a:hover {
 
 .status {
   font-family: var(--main-font), sans-serif;
+  margin-bottom: 24px;
 }
 
-.status p {
+.status h4 {
+  margin-top: 8px;
+  font-size: 24px;
   display: flex;
+}
+.status p {
+  font-size: 24px;
+  display: flex;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 12px;
 }
