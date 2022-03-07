@@ -213,7 +213,7 @@ nav a:hover {
   background-color: red;
 }
 
-.vstack {
+.section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,9 +226,7 @@ nav a:hover {
 }
 
 .status h4 {
-  margin-top: 8px;
   font-size: 24px;
-  display: flex;
 }
 .status p {
   font-size: 24px;
@@ -259,6 +257,13 @@ nav a:hover {
   }
 
   .project div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project div p {
+    margin: 0 0 0 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -318,5 +323,52 @@ nav a:hover {
     justify-content: flex-start;
     font-size: 24px;
     font-family: var(--main-font), sans-serif;
+  }
+
+  .status {
+    font-family: var(--main-font), sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .status h4 {
+    font-weight: 375;
+    font-size: 14px;
+  }
+  .status p {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 32px 64px 32px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-me h2 {
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 48px;
+    font-family: var(--main-font), sans-serif;
+  }
+
+  .about-me p {
+    margin-top: 32px;
+    font-size: 8vw;
+    padding: 8px;
+    font-family: var(--main-font), sans-serif;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    width: 100%;
   }
 }
