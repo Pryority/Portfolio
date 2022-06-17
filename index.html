@@ -8,10 +8,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
         <!--HEADER-->
-       <header>
+    <header>
             <h1><a href="./">Matthew's Portfolio</a></h1>
             <nav>
                 <a href="#projects">Projects</a>
@@ -19,35 +20,105 @@
                 <a href="#about-me">About Me</a>
                 <a href="#contact-info">Contact</a>
             </nav>
-       </header>
+    </header>
 
-       <!--HERO-->
-       <section class="hero">
-           <div class="avatar"></div>
-       </section>
+    <!--HERO-->
+    <section class="hero mb-8">
+        <div class="avatar"></div>
+    </section>
 
-       <section id="about-me"" class="about-me">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <div class="divide"></div>
+    <div class="flex justify-center space-between mx-16 mb-24">
+        <section id="about-me" class="flex items-center">
+            <div class="flex items-center">
+                <h1 class="text-5xl">About</h1>
+                <div class="w-1 h-24 mx-8 bg-slate-300"></div>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus excepturi dolores animi, nam, sed veritatis earum laudantium rem molestias quia pariatur eveniet quas rerum eligendi saepe magnam est minima.</p>
-       </section>
+            <h2 class="text-2xl">I'm trying to learn as best I can to become more skilled as a full-stack developer. I look forward to building personal projects soon as continue to practice building.</h2>
+        </section>
+    </div>
 
-       <!--PROJECTS-->
-       <div class="projects-container">
-           <div class="section-title">
-                <h2>Projects</h2>
-                <div class="divide"></div>
-           </div>
-        
-       <section id="projects" class="projects">
-                
-                <div class="p-container">
-                    <article class="project">
+    <!--PROJECTS-->
+
+    <h1 class="text-6xl font-bold italic mx-8">PROJECTS:</h1>
+    <div class="h-2 flex bg-gradient-to-b mt-4 from-slate-100"></div>
+
+
+    <section id="projects" class="projects">
+        <div class="p-8">
+            <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
+                <div class="project-info">
+                    <div class="col-1">
+                        <h3>Fostin Pizza</h3>
+                        <div class="status">
+                            <h4>Status:</h4>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <p class="project-stack">HTML / TailwindCSS / Javascript / Express / Sequelize / mySQL2</p>
+    
+                </div>
+                <a href="https://reimagined-system.herokuapp.com/"><img src="assets/images/foston-pizza-demo.png" alt=""></a>                    
+            </div>
+        </div>
+        <div class="p-8">
+
+            <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
+                <div class="project-info">
+                    <div class="col-1">
+                        <h3>Trekker</h3>
+                        <div class="status">
+                            <h4>Status:</h4>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <p class="project-stack">HTML / CSS / Javascript</p>
+
+                </div>
+                <a href="https://project1team7.github.io/Trekking-App/"><img src="assets/images/trekker-demo.png" alt=""></a>                    
+            </div>
+        </div>
+        <div class="p-8">
+            <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
+                    <div class="project-info">
+                        <div class="col-1">
+                            <h3>ATHLEAGUE</h3>
+                            <div class="status">
+                                <h4>Status:</h4>
+                                <p>Future Build</p>
+                            </div>
+                        </div>
+                        <p class="project-stack">HTML / CSS / Javascript</p>
+
+                    </div>
+                    <a href="https://pryority.github.io/Athleague/"><img src="assets/images/demo.png" alt=""></a>                    
+            </div>
+        </div>
+
+                <section class="other-projects">           
+                    <div class="p-8">
+         
+                    <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
                         <div class="project-info">
                             <div class="col-1">
-                                <h3>ATHLEAGUE</h3>
+                                <h3>TREKKER APP</h3>
+                                <div class="status">
+                                    <h4>Status:</h4>
+                                    <p>Finished Project</p>
+                                </div>
+                            </div>
+                            <p class="project-stack">HTML / TailwindCSS / Javascript / Google Maps API</p>
+                        </div>
+                        <div class="img-container">
+                            <a href="https://project1team7.github.io/Trekking-App/"><img src="./assets/images/trekker-demo.png`" alt=""></a>                    
+                        </div>                    
+                    </div>
+                    </div>
+                    <div class="p-8">
+
+                    <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
+                        <div class="project-info">
+                            <div class="col-1">
+                                <h3>SURVIVAL</h3>
                                 <div class="status">
                                     <h4>Status:</h4>
                                     <p>Future Build</p>
@@ -56,70 +127,34 @@
                             <p class="project-stack">HTML / CSS / Javascript</p>
 
                         </div>
-                        <a href="https://pryority.github.io/Athleague/"><img src="assets/images/demo.png" alt=""></a>                    
-                    </article>
-                </div>
-                
+                        <div class="img-container">
+                            <p>⚠️</p>
+                        </div>                    
+                    </div>
+                    </div>
+                    <div class="p-8">
 
-                <section class="other-projects">                    
-                    <div class="p-container">
-                        <article class="project">
-                            <div class="project-info">
-                                <div class="col-1">
-                                    <h3>TREKKER APP</h3>
-                                    <div class="status">
-                                        <h4>Status:</h4>
-                                        <p>Finished Project</p>
-                                    </div>
+                    <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
+                        <div class="project-info">
+                            <div class="col-1">
+                                <h3>SECRET SENTENCE</h3>
+                                <div class="status">
+                                    <h4>Status:</h4>
+                                    <p>Future Build</p>
                                 </div>
-                                <p class="project-stack">HTML / CSS / Javascript</p>
-    
                             </div>
-                            <div class="img-container">
-                                <a href="https://project1team7.github.io/Trekking-App/"><img src="./assets/images/trekker-demo.png" alt=""></a>                    
-                            </div>                    
-                        </article>
+                            <p class="project-stack">HTML / CSS / Javascript</p>
+
+                        </div>
+                        <div class="img-container">
+                            <p>⚠️</p>
+                        </div>
                     </div>
-                    <div class="p-container">
-                        <article class="project">
-                            <div class="project-info">
-                                <div class="col-1">
-                                    <h3>SURVIVAL</h3>
-                                    <div class="status">
-                                        <h4>Status:</h4>
-                                        <p>Future Build</p>
-                                    </div>
-                                </div>
-                                <p class="project-stack">HTML / CSS / Javascript</p>
-    
-                            </div>
-                            <div class="img-container">
-                                <p>⚠️</p>
-                            </div>                    
-                        </article>
-                    </div>
-                    <div class="p-container">
-                        <article class="project">
-                            <div class="project-info">
-                                <div class="col-1">
-                                    <h3>SECRET SENTENCE</h3>
-                                    <div class="status">
-                                        <h4>Status:</h4>
-                                        <p>Future Build</p>
-                                    </div>
-                                </div>
-                                <p class="project-stack">HTML / CSS / Javascript</p>
-    
-                            </div>
-                            <div class="img-container">
-                                <p>⚠️</p>
-                            </div>
-                        </article>
                     </div>
                 </section>                
         </section>
         
-    </div>
+
     <section id="contacts" class="contacts">
         <article class="contact">
             <h5>Email:</h5>

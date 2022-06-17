@@ -169,6 +169,12 @@ nav a:hover {
   height: 128px;
   border-left: 5px solid var(--divider);
 }
+.divide2 {
+  width: screen;
+  margin: 0 48px 0 0px;
+  height: 2px;
+  border-left: 5px solid var(--divider);
+}
 
 .avatar {
   border: 8px var(--off-white) solid;
