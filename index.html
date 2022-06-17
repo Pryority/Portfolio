@@ -23,14 +23,25 @@
     </header>
 
     <!--HERO-->
-    <section class="hero mb-8">
-        <div class="avatar"></div>
-    </section>
+    <div class="flex flex-col">
+        <section class="flex bg-gradient-to-t from-sky-400 p-16 items-center">
+            <div class="avatar border-8 border-white rounded-sm"></div>
+            <div class="flex flex-col items-center justify-center w-1/2">
+                <div class="flex flex-col gap-y-8">
+                    <h1 id="introduction" class="fade-in-image-1 text-start text-5xl duration-200 relative transition:opacity-0 transform transition-all translate-y-12 ease-out" 
+                    data-replace='{ "translate-y-12": "translate-y-0" }'>Hi, my name is <b>Matthew.</b></h1>
+                    <h2 id="title" class="fade-in-image-2 text-start text-5xl duration-600 delay-1000 relative transform transition-all translate-y-12 ease-out" 
+                    data-replace='{ "translate-y-12": "translate-y-0" }'>I am a full-stack developer.</h1>
+                </div>
+            </div>
+        </section>
+        <div class="mb-16 bg-gradient-to-b from-sky-400 h-32 w-full"></div>
+    </div>
 
     <div class="flex justify-center space-between mx-16 mb-24">
         <section id="about-me" class="flex items-center">
             <div class="flex items-center">
-                <h1 class="text-5xl">About</h1>
+                <h1 class="text-5xl font-bold">About</h1>
                 <div class="w-1 h-24 mx-8 bg-slate-300"></div>
             </div>
             <h2 class="text-2xl">I'm trying to learn as best I can to become more skilled as a full-stack developer. I look forward to building personal projects soon as continue to practice building.</h2>
@@ -96,24 +107,6 @@
 
                 <section class="other-projects">           
                     <div class="p-8">
-         
-                    <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
-                        <div class="project-info">
-                            <div class="col-1">
-                                <h3>TREKKER APP</h3>
-                                <div class="status">
-                                    <h4>Status:</h4>
-                                    <p>Finished Project</p>
-                                </div>
-                            </div>
-                            <p class="project-stack">HTML / TailwindCSS / Javascript / Google Maps API</p>
-                        </div>
-                        <div class="img-container">
-                            <a href="https://project1team7.github.io/Trekking-App/"><img src="./assets/images/trekker-demo.png`" alt=""></a>                    
-                        </div>                    
-                    </div>
-                    </div>
-                    <div class="p-8">
 
                     <div class="bg-white drop-shadow-md p-8 border-4 rounded-2xl">
                         <div class="project-info">
@@ -155,7 +148,7 @@
         </section>
         
 
-    <section id="contacts" class="contacts">
+    <section id="contact-info" class="contacts">
         <article class="contact">
             <h5>Email:</h5>
             <p>matthewapryor@gmail.com</h5>
@@ -165,7 +158,20 @@
             <p>+1 (647) 705-7708</h5>
         </article>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        var replacers = document.querySelectorAll('[data-replace]');
+        for(var i=0; i<replacers.length; i++){
+            let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+            Object.keys(replaceClasses).forEach(function(key) {
+                replacers[i].classList.remove(key);
+                replacers[i].classList.add(replaceClasses[key]);
+            });
+        }
+    });
+    </script>
         <!-- <script src="" async defer></script> -->
+        <script src="/public/js/carousel.js"></script>
     </body>
 </html>
 
